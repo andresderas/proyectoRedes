@@ -1,0 +1,49 @@
+.cards-container {
+  width: 100%;
+  @include flexLayout;
+  flex-direction: column;
+  justify-content: center;
+
+  .user-card {
+    @include flexLayout;
+    flex-direction: column;
+    background-color: $color-white;
+    justify-content: flex-start;
+    padding: 15px 30px 15px;
+    width: 37%;
+    margin-bottom: 30px;
+    min-width: 377.013px;
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px rgba($color-black, 0.5);
+
+    .card-title {
+      width: 100%;
+      text-align: left;
+      color: $color-blue;
+      font-family: $font-montserratm;
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    hr {
+      height: 1.5px;
+      width: 100%;
+      border-width: 0;
+      color: $color-blue;
+      background-color: $color-blue;
+    }
+
+    .usercard-container {
+      @include flexLayout;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-between;
+      color: $color-blue;
+      font-family: $font-montserratm;
+      font-size: 1rem;
+    }
+  }
+}

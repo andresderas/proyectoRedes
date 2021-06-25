@@ -1,0 +1,20 @@
+/** 
+ * Este archivo contiene todos los imports de los archivos realizados en SASS.
+ * Con este archivo tenemos acceso a todo lo creado en los diferentes archivos.
+ **/
+
+//Mixin
+@import "mixin";
+
+//Base Style
+@import "base/reset";
+@import "base/page";
+
+//Layout
+@import "layout/header";
+@import "layout/main";
+
+//Component
+@import "components/logo";
+@import "components/data-section";
+@import "components/user-card"

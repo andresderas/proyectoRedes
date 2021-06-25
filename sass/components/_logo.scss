@@ -1,0 +1,10 @@
+/*Se encarga de dar estilo a el logo de la pagina*/
+.logo-container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+
+  .logo{
+    width: 300px;
+  }
+}

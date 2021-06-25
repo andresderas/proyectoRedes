@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>COVID-19</title>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/fe815b0745.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- Start of Header -->
+    <header class="header">
+      <nav class="nav-bar">
+        <ul class="menu">
+          <li>
+            <a href="#" class="temperatura-show">Temperatura</a>
+          </li>
+          <li>
+            <a href="#" class="usuarios-show">Usuarios</a>
+          </li>
+          <li>
+            <a href="#" class="administrar-show">Administrar</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="logo-container">
+        <img src="./img/covid_19.png" alt="COVID-19 Logo" class="logo" />
+      </div>
+      <!-- Start of Temperatura -->
+      <section id="temperatura" class="data-section hide">
+        <div class="data-subSection">
+          <h1 class="titulo_datasection">Registro de Temperatura</h1>
+          <form action="#" method="GET">
+            <div class="datacontent">
+              <div class="container-48">
+                <label for="usuario">Usuario</label>
+                <input
+                  type="text"
+                  name="usuario"
+                  id="usuario"
+                  class="content-100"
+                />
+              </div>
+
+              <div class="container-48">
+                <label for="temperatura-picker">Temperatura</label>
+                <input
+                  type="number"
+                  min="35"
+                  step=".1"
+                  max="45"
+                  name="temperatura-picker"
+                  id="temperatura-picker"
+                  class="content-100"
+                />
+              </div>
+              <button type="submit" value="Registrar" class="btnAdministrar">Registrar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- Start of Usuarios -->
+      <section id="usuarios" class="data-section">
+        <h1 class="titulo_registroUsuarios">Registro de Usuarios</h1>
+        <div class="cards-container"></div>
+      </section>
+      <!-- Start of Administrar -->
+      <section id="administrar" class="data-section hide">
+        <div class="data-subSection">
+          <h1 class="titulo_datasection">Crear Usuario</h1>
+          <form class="add-user-form">
+            <div class="datacontent">
+              <div class="container-48">
+                <label for="nombre">Nombre</label>
+                <input
+                  type="text"
+                  name="nombre"
+                  id="nombre"
+                  class="content-100"
+                />
+              </div>
+
+              <div class="container-48">
+                <label for="apellido">Apellido</label>
+                <input
+                  type="text"
+                  name="apellido"
+                  id="apellido"
+                  class="content-100"
+                />
+              </div>
+
+              <div class="container-48">
+                <label for="usuario-crear">Usuario</label>
+                <input
+                  type="text"
+                  name="usuario-crear"
+                  id="usuario-crear"
+                  class="content-100"
+                />
+              </div>
+
+              <div class="container-48">
+                <label for="edad">Edad</label>
+                <input
+                  type="number"
+                  name="edad"
+                  min="0"
+                  max="120"
+                  id="edad"
+                  class="content-100"
+                />
+              </div>
+              <input type="submit" value="Crear" class="btnAdministrar" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

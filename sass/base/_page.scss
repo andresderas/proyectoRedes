@@ -1,0 +1,27 @@
+/*Configura las variables y body de la pagina*/
+
+// Colors
+$color-white: #fff;
+$color-black: #000000;
+$color-yellow: #ffe81f;
+$color-blue: #28256B;
+$color-green: #A5CE37;
+$color-darkYellow: #c9ad0a;
+$color-grey: #aaaaaa;
+$fav-color: #ff0000;
+
+//fonts
+$font-montserratm: "Montserrat", sans-serif;
+
+* {
+  box-sizing: inherit;
+}
+
+:root {
+  box-sizing: border-box;
+}
+
+body {
+  background: $color-blue;
+  background-size: cover;
+}
